@@ -1,0 +1,548 @@
+{
+  "roles": [
+    {
+      "id": "1",
+      "name": "System Administrator",
+      "description": "Manages system, users, settings, and full audit logs"
+    },
+    {
+      "id": "2",
+      "name": "Asset Officer",
+      "description": "Manages the complete asset lifecycle"
+    },
+    {
+      "id": "3",
+      "name": "Procurement Officer",
+      "description": "Manages suppliers, purchase orders, and purchase items"
+    },
+    {
+      "id": "4",
+      "name": "Unit Approver",
+      "description": "Approves requests within an assigned campus or department"
+    },
+    {
+      "id": "5",
+      "name": "Employee",
+      "description": "Views assigned assets and manages own requests"
+    },
+    {
+      "id": "6",
+      "name": "Auditor / Executive Viewer",
+      "description": "Read-only institutional reports and dashboards"
+    }
+  ],
+  "campuses": [
+    {
+      "id": "cmp-1",
+      "name": "Arusha Main Campus",
+      "code": "IAA-ARU",
+      "location": "Njiro Hill, Arusha, Tanzania",
+      "description": "Principal academic and administrative campus",
+      "contactPerson": "Campus Contact Officer",
+      "contactEmail": "ict.arusha@iaa.ac.tz",
+      "contactPhone": "+255 27 297 0056"
+    },
+    {
+      "id": "cmp-2",
+      "name": "Dar es Salaam Campus",
+      "code": "IAA-DAR",
+      "location": "Kurasini Harbor View, Dar es Salaam",
+      "description": "Coastal campus offering executive and undergraduate programs",
+      "contactPerson": "Campus Contact Officer",
+      "contactEmail": "director.dar@iaa.ac.tz",
+      "contactPhone": "+255 22 285 1060"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dep-1",
+      "name": "ICT Directorate",
+      "code": "ICT-DIR",
+      "campus": "Arusha Main Campus",
+      "campusId": "cmp-1",
+      "headOfDepartment": "Department Head",
+      "totalEmployees": 18
+    },
+    {
+      "id": "dep-2",
+      "name": "Accounting and Finance",
+      "code": "ACC-FIN",
+      "campus": "Arusha Main Campus",
+      "campusId": "cmp-1",
+      "headOfDepartment": "Department Head",
+      "totalEmployees": 12
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp-1",
+      "employeeNumber": "IAA/EMP/001",
+      "firstName": "Employee",
+      "lastName": "One",
+      "email": "employee.one@iaa.ac.tz",
+      "phone": "+255 700 000 010",
+      "campus": "Arusha Main Campus",
+      "campusId": "cmp-1",
+      "department": "Accounting and Finance",
+      "departmentId": "dep-2",
+      "designation": "Lecturer",
+      "status": "Active"
+    },
+    {
+      "id": "emp-2",
+      "employeeNumber": "IAA/EMP/002",
+      "firstName": "Systems",
+      "lastName": "Administrator",
+      "email": "systems.admin@iaa.ac.tz",
+      "phone": "+255 700 000 011",
+      "campus": "Arusha Main Campus",
+      "campusId": "cmp-1",
+      "department": "ICT Directorate",
+      "departmentId": "dep-1",
+      "designation": "Systems Administrator",
+      "status": "Active"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "System Administrator",
+      "firstName": "System",
+      "lastName": "Administrator",
+      "username": "admin",
+      "password": "password123",
+      "email": "admin@iaa.ac.tz",
+      "role": "System Administrator",
+      "campus": "Arusha Main Campus",
+      "department": "ICT Directorate",
+      "status": "Active",
+      "isActive": true,
+      "phone": "+255 700 000 001",
+      "createdAt": "2026-08-18T08:00:00Z"
+    },
+    {
+      "id": "usr-2",
+      "name": "Unit Approver",
+      "firstName": "Unit",
+      "lastName": "Approver",
+      "username": "unitapprover",
+      "password": "password123",
+      "email": "unitapprover@iaa.ac.tz",
+      "role": "Unit Approver",
+      "scopeType": "department",
+      "scopeId": "dep-1",
+      "campus": "Arusha Main Campus",
+      "department": "ICT Directorate",
+      "status": "Active",
+      "isActive": true,
+      "phone": "+255 700 000 002",
+      "createdAt": "2026-08-18T08:00:00Z"
+    },
+    {
+      "id": "usr-3",
+      "name": "Asset Officer",
+      "firstName": "Asset",
+      "lastName": "Officer",
+      "username": "assetofficer",
+      "password": "password123",
+      "email": "assetofficer@iaa.ac.tz",
+      "role": "Asset Officer",
+      "campus": "Arusha Main Campus",
+      "department": "ICT Directorate",
+      "status": "Active",
+      "isActive": true,
+      "phone": "+255 700 000 003",
+      "createdAt": "2026-08-18T08:00:00Z"
+    },
+    {
+      "id": "usr-4",
+      "name": "Procurement Officer",
+      "firstName": "Procurement",
+      "lastName": "Officer",
+      "username": "procurementofficer",
+      "password": "password123",
+      "email": "procurement@iaa.ac.tz",
+      "role": "Procurement Officer",
+      "campus": "Arusha Main Campus",
+      "department": "Procurement and Supplies",
+      "status": "Active",
+      "isActive": true,
+      "phone": "+255 700 000 004",
+      "createdAt": "2026-08-18T08:00:00Z"
+    },
+    {
+      "id": "usr-5",
+      "name": "Employee",
+      "firstName": "Employee",
+      "lastName": "User",
+      "username": "employee",
+      "password": "password123",
+      "email": "employee@iaa.ac.tz",
+      "role": "Employee",
+      "campus": "Arusha Main Campus",
+      "department": "Accounting and Finance",
+      "status": "Active",
+      "isActive": true,
+      "phone": "+255 700 000 005",
+      "createdAt": "2026-08-18T08:00:00Z"
+    },
+    {
+      "id": "usr-6",
+      "name": "Auditor Viewer",
+      "firstName": "Auditor",
+      "lastName": "Viewer",
+      "username": "auditor",
+      "password": "password123",
+      "email": "auditor@iaa.ac.tz",
+      "role": "Auditor / Executive Viewer",
+      "roleVariant": "auditor",
+      "campus": "Arusha Main Campus",
+      "department": "Internal Audit Unit",
+      "status": "Active",
+      "isActive": true,
+      "phone": "+255 700 000 006",
+      "createdAt": "2026-08-18T08:00:00Z"
+    }
+  ],
+  "asset_categories": [
+    {
+      "id": "cat-1",
+      "name": "Laptops",
+      "code": "LAP",
+      "description": "Portable computing devices"
+    },
+    {
+      "id": "cat-2",
+      "name": "Desktops",
+      "code": "DESK",
+      "description": "Workstation computers"
+    },
+    {
+      "id": "cat-3",
+      "name": "Networking",
+      "code": "NET",
+      "description": "Network equipment"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "sup-1",
+      "name": "Simba Computer Systems Ltd",
+      "contactPerson": "David K. Mlay",
+      "email": "sales@simbacomputers.co.tz",
+      "phone": "+255 22 211 4500",
+      "address": "Plot 45 Samora Avenue, Dar es Salaam",
+      "tinNumber": "104-558-921",
+      "suppliedCategories": [
+        "Laptops",
+        "Desktops"
+      ],
+      "status": "Active"
+    }
+  ],
+  "purchase_orders": [],
+  "assets": [
+    {
+      "assetTag": "IAA-ARU-AST-488",
+      "name": "hp",
+      "category": "Laptops",
+      "brand": "hp elite",
+      "model": "elite",
+      "serialNumber": "23374745",
+      "campus": "Dar es Salaam Campus",
+      "department": "ICT Directorate",
+      "location": "server room",
+      "status": "Available",
+      "condition": "Good",
+      "purchaseDate": "2026-08-18",
+      "purchaseCost": 2000000,
+      "supplierName": "Simba Computer Systems Ltd",
+      "warrantyExpiry": "",
+      "specifications": "",
+      "notes": "",
+      "barcode": "IAA-ARU-AST-488",
+      "qrCode": "QR-IAA-ARU-AST-488",
+      "id": "ass-1787047038641-712",
+      "createdAt": "2026-08-18T09:57:18.641Z"
+    }
+  ],
+  "asset_assignments": [],
+  "asset_transfers": [],
+  "maintenance_records": [],
+  "disposal_records": [],
+  "audit_logs": [
+    {
+      "timestamp": "2026-08-19T09:30:17.663Z",
+      "userId": "usr-6",
+      "userName": "Auditor Viewer",
+      "userRole": "Auditor / Executive Viewer",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User auditor (Auditor / Executive Viewer) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787131817663-700",
+      "createdAt": "2026-08-19T09:30:17.663Z"
+    },
+    {
+      "timestamp": "2026-08-19T09:29:36.935Z",
+      "userId": "usr-3",
+      "userName": "Asset Officer",
+      "userRole": "Asset Officer",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User assetofficer (Asset Officer) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787131776935-178",
+      "createdAt": "2026-08-19T09:29:36.935Z"
+    },
+    {
+      "timestamp": "2026-08-19T09:28:41.672Z",
+      "userId": "usr-5",
+      "userName": "Employee User",
+      "userRole": "Employee",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User employee (Employee) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787131721672-549",
+      "createdAt": "2026-08-19T09:28:41.672Z"
+    },
+    {
+      "timestamp": "2026-08-19T09:02:03.373Z",
+      "userId": "usr-1",
+      "userName": "System Administrator",
+      "userRole": "System Administrator",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User admin (System Administrator) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787130123373-18",
+      "createdAt": "2026-08-19T09:02:03.373Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:45:49.522Z",
+      "userId": "usr-5",
+      "userName": "Employee User",
+      "userRole": "Employee",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User employee (Employee) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787129149522-251",
+      "createdAt": "2026-08-19T08:45:49.522Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:35:37.103Z",
+      "userId": "usr-6",
+      "userName": "Auditor Viewer",
+      "userRole": "Auditor / Executive Viewer",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User auditor (Auditor / Executive Viewer) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787128537103-811",
+      "createdAt": "2026-08-19T08:35:37.103Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:27:13.774Z",
+      "userId": "usr-5",
+      "userName": "Employee User",
+      "userRole": "Employee",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User employee (Employee) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787128033774-527",
+      "createdAt": "2026-08-19T08:27:13.774Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:25:07.830Z",
+      "userId": "usr-2",
+      "userName": "Unit Approver",
+      "userRole": "Unit Approver",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User unitapprover (Unit Approver) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787127907830-890",
+      "createdAt": "2026-08-19T08:25:07.830Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:22:44.450Z",
+      "userId": "usr-4",
+      "userName": "Procurement Officer",
+      "userRole": "Procurement Officer",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User procurementofficer (Procurement Officer) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787127764450-679",
+      "createdAt": "2026-08-19T08:22:44.450Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:16:10.167Z",
+      "userId": "usr-3",
+      "userName": "Asset Officer",
+      "userRole": "Asset Officer",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User assetofficer (Asset Officer) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787127370167-754",
+      "createdAt": "2026-08-19T08:16:10.167Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:10:12.561Z",
+      "userId": "usr-5",
+      "userName": "Employee User",
+      "userRole": "Employee",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User employee (Employee) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787127012562-830",
+      "createdAt": "2026-08-19T08:10:12.562Z"
+    },
+    {
+      "timestamp": "2026-08-19T08:05:43.926Z",
+      "userId": "usr-1",
+      "userName": "System Administrator",
+      "userRole": "System Administrator",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User admin (System Administrator) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787126743926-290",
+      "createdAt": "2026-08-19T08:05:43.926Z"
+    },
+    {
+      "timestamp": "2026-08-19T07:52:48.041Z",
+      "userId": "usr-1",
+      "userName": "System Administrator",
+      "userRole": "System Administrator",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User admin (System Administrator) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787125968041-300",
+      "createdAt": "2026-08-19T07:52:48.041Z"
+    },
+    {
+      "timestamp": "2026-08-19T07:13:01.780Z",
+      "userId": "usr-5",
+      "userName": "Employee User",
+      "userRole": "Employee",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User employee (Employee) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787123581780-392",
+      "createdAt": "2026-08-19T07:13:01.780Z"
+    },
+    {
+      "timestamp": "2026-08-18T11:37:16.170Z",
+      "userId": "usr-5",
+      "userName": "Employee User",
+      "userRole": "Employee",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User employee (Employee) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787053036170-545",
+      "createdAt": "2026-08-18T11:37:16.170Z"
+    },
+    {
+      "timestamp": "2026-08-18T11:35:23.466Z",
+      "userId": "usr-6",
+      "userName": "Internal Auditor",
+      "userRole": "Internal Auditor",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User auditor (Internal Auditor) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787052923466-862",
+      "createdAt": "2026-08-18T11:35:23.466Z"
+    },
+    {
+      "timestamp": "2026-08-18T11:06:41.761Z",
+      "userId": "usr-1",
+      "userName": "System Administrator",
+      "userRole": "System Administrator",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User admin (System Administrator) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787051201761-532",
+      "createdAt": "2026-08-18T11:06:41.761Z"
+    },
+    {
+      "timestamp": "2026-08-18T11:06:28.623Z",
+      "userId": "system",
+      "userName": "System User",
+      "userRole": "System",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "Failed login attempt for username: admin",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787051188623-53",
+      "createdAt": "2026-08-18T11:06:28.623Z"
+    },
+    {
+      "timestamp": "2026-08-18T09:57:18.641Z",
+      "userId": "usr-1",
+      "userName": "System Administrator",
+      "userRole": "System Administrator",
+      "action": "CREATE",
+      "module": "Assets",
+      "description": "Registered new ICT asset IAA-ARU-AST-488 (hp) at Dar es Salaam Campus",
+      "ipAddress": "127.0.0.1",
+      "campus": "Dar es Salaam Campus",
+      "id": "aud-1787047038641-865",
+      "createdAt": "2026-08-18T09:57:18.641Z"
+    },
+    {
+      "timestamp": "2026-08-18T09:54:09.591Z",
+      "userId": "usr-1",
+      "userName": "System Administrator",
+      "userRole": "System Administrator",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User admin (System Administrator) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787046849591-517",
+      "createdAt": "2026-08-18T09:54:09.591Z"
+    },
+    {
+      "timestamp": "2026-08-18T09:46:12.785Z",
+      "userId": "usr-1",
+      "userName": "System Administrator",
+      "userRole": "System Administrator",
+      "action": "LOGIN",
+      "module": "Authentication",
+      "description": "User admin (System Administrator) logged in successfully",
+      "ipAddress": "127.0.0.1",
+      "campus": "Arusha Main Campus",
+      "id": "aud-1787046372785-72",
+      "createdAt": "2026-08-18T09:46:12.785Z"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ICTIMS - IAA ICT Inventory Management System",
+  "description": "Enterprise ICT inventory, asset tracking, campus transfers, maintenance, audit trail, and lifecycle management for Institute of Accountancy Arusha (IAA).",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

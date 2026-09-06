@@ -1,0 +1,33 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "jspdf": "^4.2.1",
+        "jspdf-autotable": "^5.0.8",
+        "jsqr": "^1.4.0",
+        "lucide-react": "^0.400.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.26.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.0.0",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^4.3.1",
+        "concurrently": "^10.0.3",
+        "tailwindcss": "^4.0.0",
+        "typescript": "^5.5.3",
+        "vite": "^5.4.0"
+    },
+    "optionalDependencies": {
+        "@laravel/multiplex": "^0.4.1"
+    }
+}

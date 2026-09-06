@@ -1,0 +1,44 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name 172.1.0.171 _;
+
+    # ==========================================
+    # React / Vite production frontend
+    # ==========================================
+    root /home/bhoke/Downloads/myapp/dist;
+    index index.html;
+
+    # ==========================================
+    # Laravel API and Sanctum
+    # ==========================================
+    location ~ ^/(api|sanctum)(/|$) {
+        include fastcgi_params;
+
+        fastcgi_param SCRIPT_FILENAME /home/bhoke/Downloads/myapp/public/index.php;
+        fastcgi_param SCRIPT_NAME /index.php;
+        fastcgi_param DOCUMENT_ROOT /home/bhoke/Downloads/myapp/public;
+
+        fastcgi_param QUERY_STRING $query_string;
+
+        fastcgi_pass unix:/run/php/php8.4-fpm.sock;
+    }
+
+    # ==========================================
+    # React frontend routes
+    # ==========================================
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Do not execute arbitrary PHP files
+    location ~ \.php$ {
+        return 404;
+    }
+
+    # Block hidden files
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}

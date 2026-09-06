@@ -1,0 +1,66 @@
+/* IAA Design Tokens */
+:root {
+  --primary: #1B3A5C;
+  --primary-dark: #0A1626;
+  --primary-light: #2E5A87;
+  --background: #F5F6F8;
+  --surface: #FFFFFF;
+  --border: #E9EBEF;
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+  --success: #2E7D32;
+  --warning: #D97706;
+  --danger: #B42318;
+  --info: #2563EB;
+
+  --iaa-blue: #1B3A5C;
+  --iaa-blue-dark: #0A1626;
+  --iaa-blue-light: #2E5A87;
+  --iaa-gold: #C5A84E;
+  --iaa-gold-light: #D4BA6A;
+  --iaa-gold-dark: #A88A3A;
+
+  --iaa-gray-50: #F8F9FA;
+  --iaa-gray-100: #F1F3F5;
+  --iaa-gray-200: #E9EBEF;
+  --iaa-gray-300: #D1D5DB;
+  --iaa-gray-400: #9CA3AF;
+  --iaa-gray-500: #6B7280;
+  --iaa-gray-600: #4B5563;
+  --iaa-gray-700: #374151;
+  --iaa-gray-800: #1F2937;
+  --iaa-gray-900: #111827;
+
+  --iaa-success: #10B981;
+  --iaa-warning: #F59E0B;
+  --iaa-error: #EF4444;
+  --iaa-info: #3B82F6;
+
+  --iaa-spacing-xs: 0.25rem;
+  --iaa-spacing-sm: 0.5rem;
+  --iaa-spacing-md: 0.75rem;
+  --iaa-spacing-lg: 1rem;
+  --iaa-spacing-xl: 1.5rem;
+  --iaa-spacing-2xl: 2rem;
+  --iaa-spacing-3xl: 3rem;
+
+  --iaa-font-family: 'Inter', 'Segoe UI', sans-serif;
+  --iaa-font-size-xs: 0.75rem;
+  --iaa-font-size-sm: 0.875rem;
+  --iaa-font-size-base: 1rem;
+  --iaa-font-size-lg: 1.125rem;
+  --iaa-font-size-xl: 1.25rem;
+  --iaa-font-size-2xl: 1.5rem;
+  --iaa-font-size-3xl: 1.875rem;
+
+  --iaa-border-radius-sm: 0.375rem;
+  --iaa-border-radius-md: 0.5rem;
+  --iaa-border-radius-lg: 0.75rem;
+  --iaa-border-radius-xl: 1rem;
+  --iaa-border-radius-2xl: 1.5rem;
+
+  --iaa-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --iaa-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --iaa-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --iaa-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
